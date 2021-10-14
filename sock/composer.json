@@ -1,0 +1,12 @@
+{
+    "name": "iqbalni/uts",
+    "require": {
+        "appwrite/php-clamav": "^1.1"
+    },
+    "authors": [
+        {
+            "name": "iqbal nur imansyah",
+            "email": "iqbalnurimansyah@gmail.com"
+        }
+    ]
+}

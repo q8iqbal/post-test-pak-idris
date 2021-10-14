@@ -1,0 +1,17 @@
+version: '3'
+
+networks: 
+    tes :
+
+services:      
+    clamav:
+        image: clamav/clamav
+        container_name: clamav
+        tty: true
+        ports: 
+            - "3310:3310"
+            - "7357:7357"
+        volumes: 
+            - ./sock:/run/clamav/:rw
+        networks: 
+            - tes
