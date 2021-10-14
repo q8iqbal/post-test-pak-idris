@@ -4,6 +4,7 @@ function isFileSafe()
     require 'clamav/Clamav.php';
 
     $clamav = new Clamav(array(
+        'clamd_sock' => '/var/run/clamav/clamd.ctl',
         'clamd_ip' => '127.0.0.1'
     ));
 
